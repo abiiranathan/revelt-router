@@ -9,7 +9,6 @@ export default defineConfig({
     dts({
       include: ["src"],
       exclude: ["src/test"],
-      rollupTypes: true,
       tsconfigPath: "./tsconfig.build.json",
     }),
   ],

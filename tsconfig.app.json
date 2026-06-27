@@ -10,7 +10,9 @@
     "module": "esnext",
     "types": [
       "vite/client",
-      "@testing-library/jest-dom"
+      "@testing-library/jest-dom",
+      "node",
+      "vitest"
     ],
     "skipLibCheck": true,
     /* Bundler mode */
