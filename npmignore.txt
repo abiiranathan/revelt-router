@@ -1,0 +1,18 @@
+# Source and tooling — not needed by consumers
+src/
+*.config.ts
+*.config.js
+tsconfig*.json
+.github/
+.vscode/
+
+# Test artifacts
+coverage/
+*.test.ts
+*.test.tsx
+*.spec.ts
+*.spec.tsx
+
+# Development files
+node_modules/
+.env*
