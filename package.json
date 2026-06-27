@@ -1,6 +1,6 @@
 {
   "name": "revelt-router",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Lightweight History API router for React. No dependencies beyond React itself.",
   "author": "Nathan Abiira <nabiira2by2@gmail.com>",
   "license": "MIT",

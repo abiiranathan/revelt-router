@@ -12,6 +12,21 @@ describe("Link", () => {
     );
   });
 
+  it("renders nested children when used as a component", () => {
+    renderAt(
+      "/",
+      <Link to="/about">
+        <span data-testid="link-child">About</span>
+      </Link>,
+    );
+
+    expect(screen.getByTestId("link-child")).toBeInTheDocument();
+    expect(screen.getByRole("link", { name: "About" })).toHaveAttribute(
+      "href",
+      "/about",
+    );
+  });
+
   it("navigates on click without a page reload", async () => {
     renderAt(
       "/",

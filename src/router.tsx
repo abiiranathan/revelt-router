@@ -531,7 +531,9 @@ export function Route<P extends object>({
 // Link
 // ---------------------------------------------------------------------------
 
-interface LinkProps extends React.AnchorHTMLAttributes<HTMLAnchorElement> {
+interface LinkProps extends React.PropsWithChildren<
+  React.AnchorHTMLAttributes<HTMLAnchorElement>
+> {
   /** The path to navigate to. */
   to: string;
   /**
